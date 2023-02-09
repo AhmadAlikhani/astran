@@ -72,7 +72,7 @@ public:
     void insertLPMinVar( string v );
     void insertLPMinVar( string v, int i );
     
-    int solve(string lpSolverFile, int timeLimit);
+    int solve(string lpSolverFile, int timeLimit , string appSolver);
     
     int getVariableVal( string name );
 

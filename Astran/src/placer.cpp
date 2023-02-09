@@ -119,7 +119,7 @@ void Placer::incrementalPlacement(Router* rt, string lpSolverFile){
 			cpt.insertLPMinVar("N_"+ nets_it->name+"_COMPACT");
 		}
 	}
-	cpt.solve(lpSolverFile, 3600);
+	cpt.solve(lpSolverFile, 3600 , "cplex");
 	
 	map<string, Instance> *cellsInsts=currentCircuit->getLayout(currentCircuit->getTopCell() + "_PL")->getInstances();
 	for(map<string, Instance>::iterator cellsInst_it=cellsInsts->begin(); cellsInst_it!=cellsInsts->end(); cellsInst_it++)

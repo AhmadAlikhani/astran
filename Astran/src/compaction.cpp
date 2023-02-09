@@ -5,6 +5,19 @@
  */
 
 #include "compaction.h"
+#include <iostream>
+#include <stdio.h>
+#include <fstream>
+#include <istream>
+#include <map>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <regex>
 
 /** Constructor. */
 Compaction::Compaction( cp_algo a ,string name) {
@@ -408,7 +421,7 @@ void Compaction::insertLPMinVar( string v, int i ) {
  */
 
 /** Solve Compaction constraints with linear programming. */
-int Compaction::solve(string lpSolverFile, int timeLimit) {
+int Compaction::solve(string lpSolverFile, int timeLimit , string appSolver) {
 	cout << "-> Calling LP Solver (" 
 	<< variables.size() << " variables, " 
 	<< constraints.size() << " constraints)" << endl;
@@ -534,6 +547,7 @@ int Compaction::solve(string lpSolverFile, int timeLimit) {
     string solFileName = lp_filename + ".sol";
     
     remove(solFileName.c_str());
+
     
     string cmd = "\"" + lpSolverFile + "\" TimeLimit=" + to_string(timeLimit) + " ResultFile=" + solFileName + " " + lp_filename + ".lp";
 
@@ -544,7 +558,7 @@ int Compaction::solve(string lpSolverFile, int timeLimit) {
 	if(x==NULL)
 		throw AstranError("Problem executing: " + cmd);
     
-    cout << "-> To interrupt earlier and get the current best solution, type in a terminal: kill -2 [gurobi process]" << endl;
+    cout << "-> To interrupt earlier and get the current best solution, type in a terminal: kill -2 [cplex process]" << endl;
     cout << "-> * and H means new feasible solution found:";
     cerr << " ";
     
@@ -565,13 +579,59 @@ int Compaction::solve(string lpSolverFile, int timeLimit) {
             return 0;
     }
     
-    _pclose(x);
+     _pclose(x);
+    
+    
+    if(appSolver == "cplex"){
+    
+    	remove("xmlsol.sol");
+    	system("/home/ahmad/cpl/cplex/bin/x86-64_linux/cplex -f /home/ahmad/astran/Astran/solcreator.txt") ;
+    
+   	    string xmlsol = "xmlsol.sol";
+    
+    	FILE* screate = fopen(solFileName.c_str(), "w");
+    	
+    	FILE* xml = fopen(xmlsol.c_str(), "r");
+    
+    	if(xml==NULL)
+			throw AstranError("Problem opening: " + solFileName);
+    	
+   	    ofstream fw(solFileName.c_str());
+   	    if ( !fw )
+        	throw AstranError("Cannot create file " + solFileName);
+            
+   	    while (fgets(line, 150, xml)) {
+    
+			regex reg("<variablename=\"(.*?)\"index=\"(.*?)\"value=\"(.*?)\"/>");	
+			istringstream s(line);
+			string n;
+			n = line ; 
+		
+      		if (n.find("variable") != -1) {
+				for (int i = n.length() - 1; i != -1; i--) {
+					if (n[i] == ' ') {
+						n.erase(i, 1);
+					}
+				}
+				n.erase(n.length() - 1, 1);
+
+
+				if (regex_match(n, reg)) {
+
+					fw << regex_replace(n, reg, "$1 $3") << endl;
+				}
+			}
+   	    }
+
+   		fclose(screate);
+    
+    }
+    
     
     FILE* stream = fopen(solFileName.c_str(), "r");
-    
 	if(stream==NULL)
 		throw AstranError("Problem opening: " + solFileName);
-    
+	
 	while (fgets(line, 150, stream)) {
 		
 		istringstream s(line);

@@ -1,0 +1,3 @@
+read /home/ahmad/astran/Astran/build/bin/ILPmodel.lp
+optimize
+write /home/ahmad/astran/Astran/build/bin/xmlsol.sol

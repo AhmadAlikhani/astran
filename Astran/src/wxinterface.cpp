@@ -12,6 +12,8 @@
 
 ICPD_frm::ICPD_frm( wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style ) : wxFrame( parent, id, title, pos, size, style )
 {
+	std::cout<<"Ahmad Mohammad Alikhani 4007702002\n";
+	
 	this->SetSizeHints( wxDefaultSize, wxDefaultSize );
 	
 	barra_menu = new wxMenuBar( 0 );
