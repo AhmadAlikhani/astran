@@ -27,7 +27,7 @@ char* narrow( const wstring& str ) {
 bool wxSightApp::OnInit() {
 	char ** args = new char*[argc];
 	for ( int i = 0; i < argc; i++ )
-		args[i] = narrow( argv[i] );
+		args[i] = narrow( (wstring)argv[i] );
 	
     glutInit( &argc, args );
 	#ifdef __WXMAC__

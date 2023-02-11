@@ -366,7 +366,7 @@ void wxSightFrame::CreateModelList() {
 
 void wxSightFrame::saveSnapShot(wxCommandEvent& event){
 	wxString filename = wxFileSelector(_("File name"), _(""), _(""), _(""),
-			_("PNG files (*.png)|*.png"), wxSAVE);
+			_("PNG files (*.png)|*.png") );
 	
 	const int w = sight.getWidth()   ;  // {TODO} verificar bug maior 660width
 	const int h = sight.getHeight()   ; 
@@ -549,7 +549,7 @@ void wxSightFrame::Open(wxCommandEvent& event){
 }//end event
 // -----------------------------------------------------------------------------
 void wxSightFrame::SaveAs(wxCommandEvent& event){
-	wxString filename = wxFileSelector(_("File name"), _(""), _(""), _("cif"),_("*.cif"), wxSAVE);
+	wxString filename = wxFileSelector(_("File name"), _(""), _(""), _("cif"),_("*.cif"));
 	if( !filename.empty() ){
 		sight.saveFile( filename.ToAscii() );
 	}
