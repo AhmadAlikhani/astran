@@ -797,7 +797,7 @@ bool AutoCell::compact(string lpSolverFile, int diffStretching, int griddedPoly,
     cpt.forceIntegerVar("width_gpos");
     cpt.insertLPMinVar("width", 5000);
     
-    if (!cpt.solve(lpSolverFile, timeLimit , "cplex"))
+    if (!cpt.solve(lpSolverFile, timeLimit , "gurobi"))
         return false;
     
     for (int i = 0; i < geometries.size(); i++) {

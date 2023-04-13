@@ -626,7 +626,14 @@ int Compaction::solve(string lpSolverFile, int timeLimit , string appSolver) {
    		fclose(screate);
     
     }
+    else if(appSolver == "gurobi")
+    {
+    system("export GUROBI_HOME=\"/opt/gurobi605/linux64\"");
+    system("export PATH=$PATH:$GUROBI_HOME/bin");
+    system("export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GUROBI_HOME/lib");
+    system("GRB_LICENSE_FILE=\"/home/ahmad/gurobi.lic\"");
     
+    }
     
     FILE* stream = fopen(solFileName.c_str(), "r");
 	if(stream==NULL)

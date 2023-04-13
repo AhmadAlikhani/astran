@@ -1,0 +1,503 @@
+
+Gurobi 6.0.5 (linux64) logging started Wed Apr 13 06:08:34 2016
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.0.5 build v6.0.5rc1 (linux64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Warning: unknown variable '+' in integer section
+Warning: unknown variable '-' in integer section
+Warning: unknown variable '12' in integer section
+Warning: unknown variable '0.500000' in integer section
+Warning: unknown variable '2.000000' in integer section
+Warning: unknown variable '20' in integer section
+WARNING: Numeric variable name in LP file ('12') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file ILPmodel.lp
+Reading time = 0.01 seconds
+(null): 1343 rows, 765 columns, 4075 nonzeros
+Optimize a model with 1343 rows, 765 columns and 4075 nonzeros
+Coefficient statistics:
+  Matrix range    [5e-01, 1e+05]
+  Objective range [1e+00, 5e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+04]
+Presolve removed 525 rows and 333 columns
+Presolve time: 0.01s
+Presolved: 818 rows, 432 columns, 2296 nonzeros
+Variable types: 0 continuous, 432 integer (215 binary)
+
+Root relaxation: objective 6.072348e+05, 402 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 607234.750    0   95          - 607234.750      -     -    0s
+H    0     0                    611424.00000 607234.750  0.69%     -    0s
+H    0     0                    609438.00000 607234.750  0.36%     -    0s
+     0     0 607299.774    0  211 609438.000 607299.774  0.35%     -    0s
+H    0     0                    608894.00000 607299.774  0.26%     -    0s
+     0     0 607455.428    0  182 608894.000 607455.428  0.24%     -    0s
+H    0     0                    608756.00000 607455.428  0.21%     -    0s
+     0     0 607496.883    0  151 608756.000 607496.883  0.21%     -    0s
+     0     0 607497.202    0  155 608756.000 607497.202  0.21%     -    0s
+     0     0 607497.252    0  115 608756.000 607497.252  0.21%     -    0s
+H    0     0                    608753.00000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+H    0     0                    608738.00000 607497.252  0.20%     -    0s
+     0     0 607497.252    0   96 608738.000 607497.252  0.20%     -    0s
+H    0     0                    608245.00000 607497.252  0.12%     -    0s
+     0     0 607506.875    0  146 608245.000 607506.875  0.12%     -    0s
+H    0     0                    607968.00000 607506.875  0.08%     -    0s
+H    0     0                    607877.00000 607506.875  0.06%     -    0s
+     0     0 607529.035    0  167 607877.000 607529.035  0.06%     -    0s
+     0     0 607531.259    0  149 607877.000 607531.259  0.06%     -    0s
+     0     0 607532.878    0  150 607877.000 607532.878  0.06%     -    0s
+     0     0 607534.285    0  113 607877.000 607534.285  0.06%     -    0s
+     0     0 607534.285    0  114 607877.000 607534.285  0.06%     -    0s
+     0     0 607534.285    0  114 607877.000 607534.285  0.06%     -    0s
+H    0     0                    607852.00000 607534.285  0.05%     -    0s
+     0     2 607534.285    0  114 607852.000 607534.285  0.05%     -    0s
+H   58     6                    607789.00000 607673.423  0.02%   8.0    0s
+*   58     6              37    607789.00000 607673.423  0.02%   8.0    0s
+*  271    48              34    607786.00000 607673.423  0.02%   5.6    0s
+*  299    47              33    607785.00000 607673.423  0.02%   5.5    0s
+*  340    33              36    607766.00000 607673.423  0.02%   5.3    0s
+*  365    31              35    607762.00000 607673.423  0.01%   5.1    0s
+*  681    68              35    607761.00000 607676.491  0.01%   5.1    0s
+*  800   115              31    607759.00000 607676.833  0.01%   5.1    0s
+*  963    81              31    607753.00000 607677.042  0.01%   5.1    0s
+
+Cutting planes:
+  Gomory: 23
+  Cover: 2
+  Implied bound: 6
+  MIR: 31
+  Zero half: 1
+  Mod-K: 1
+
+Explored 1345 nodes (9698 simplex iterations) in 0.54 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.077530000000e+05, best bound 6.077370000000e+05, gap 0.0026%
+
+Wrote result file 'ILPmodel.sol'
+
+
+Gurobi 6.0.5 (linux64) logging started Wed Apr 13 06:08:43 2016
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.0.5 build v6.0.5rc1 (linux64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Warning: unknown variable '+' in integer section
+Warning: unknown variable '-' in integer section
+Warning: unknown variable '12' in integer section
+Warning: unknown variable '0.500000' in integer section
+Warning: unknown variable '2.000000' in integer section
+Warning: unknown variable '20' in integer section
+WARNING: Numeric variable name in LP file ('12') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file ILPmodel.lp
+Reading time = 0.00 seconds
+(null): 1343 rows, 765 columns, 4075 nonzeros
+Optimize a model with 1343 rows, 765 columns and 4075 nonzeros
+Coefficient statistics:
+  Matrix range    [5e-01, 1e+05]
+  Objective range [1e+00, 5e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+04]
+Presolve removed 525 rows and 333 columns
+Presolve time: 0.01s
+Presolved: 818 rows, 432 columns, 2296 nonzeros
+Variable types: 0 continuous, 432 integer (215 binary)
+
+Root relaxation: objective 6.072348e+05, 402 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 607234.750    0   95          - 607234.750      -     -    0s
+H    0     0                    611424.00000 607234.750  0.69%     -    0s
+H    0     0                    609438.00000 607234.750  0.36%     -    0s
+     0     0 607299.774    0  211 609438.000 607299.774  0.35%     -    0s
+H    0     0                    608894.00000 607299.774  0.26%     -    0s
+     0     0 607455.428    0  182 608894.000 607455.428  0.24%     -    0s
+H    0     0                    608756.00000 607455.428  0.21%     -    0s
+     0     0 607496.883    0  151 608756.000 607496.883  0.21%     -    0s
+     0     0 607497.202    0  155 608756.000 607497.202  0.21%     -    0s
+     0     0 607497.252    0  115 608756.000 607497.252  0.21%     -    0s
+H    0     0                    608753.00000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+H    0     0                    608738.00000 607497.252  0.20%     -    0s
+     0     0 607497.252    0   96 608738.000 607497.252  0.20%     -    0s
+H    0     0                    608245.00000 607497.252  0.12%     -    0s
+     0     0 607506.875    0  146 608245.000 607506.875  0.12%     -    0s
+H    0     0                    607968.00000 607506.875  0.08%     -    0s
+H    0     0                    607877.00000 607506.875  0.06%     -    0s
+     0     0 607529.035    0  167 607877.000 607529.035  0.06%     -    0s
+     0     0 607531.259    0  149 607877.000 607531.259  0.06%     -    0s
+     0     0 607532.878    0  150 607877.000 607532.878  0.06%     -    0s
+     0     0 607534.285    0  113 607877.000 607534.285  0.06%     -    0s
+     0     0 607534.285    0  114 607877.000 607534.285  0.06%     -    0s
+     0     0 607534.285    0  114 607877.000 607534.285  0.06%     -    0s
+H    0     0                    607852.00000 607534.285  0.05%     -    0s
+     0     2 607534.285    0  114 607852.000 607534.285  0.05%     -    0s
+H   58     6                    607789.00000 607673.423  0.02%   8.0    0s
+*   58     6              37    607789.00000 607673.423  0.02%   8.0    0s
+*  271    48              34    607786.00000 607673.423  0.02%   5.6    0s
+*  299    47              33    607785.00000 607673.423  0.02%   5.5    0s
+*  340    33              36    607766.00000 607673.423  0.02%   5.3    0s
+*  365    31              35    607762.00000 607673.423  0.01%   5.1    0s
+*  681    68              35    607761.00000 607676.491  0.01%   5.1    0s
+*  800   115              31    607759.00000 607676.833  0.01%   5.1    0s
+*  963    81              31    607753.00000 607677.042  0.01%   5.1    0s
+
+Cutting planes:
+  Gomory: 23
+  Cover: 2
+  Implied bound: 6
+  MIR: 31
+  Zero half: 1
+  Mod-K: 1
+
+Explored 1345 nodes (9698 simplex iterations) in 0.50 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.077530000000e+05, best bound 6.077370000000e+05, gap 0.0026%
+
+Wrote result file 'ILPmodel.sol'
+
+
+Gurobi 6.0.5 (linux64) logging started Wed Apr 13 06:16:49 2016
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.0.5 build v6.0.5rc1 (linux64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Warning: unknown variable '+' in integer section
+Warning: unknown variable '-' in integer section
+Warning: unknown variable '12' in integer section
+Warning: unknown variable '0.500000' in integer section
+Warning: unknown variable '2.000000' in integer section
+Warning: unknown variable '20' in integer section
+WARNING: Numeric variable name in LP file ('12') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file ILPmodel.lp
+Reading time = 0.00 seconds
+(null): 1343 rows, 765 columns, 4075 nonzeros
+Optimize a model with 1343 rows, 765 columns and 4075 nonzeros
+Coefficient statistics:
+  Matrix range    [5e-01, 1e+05]
+  Objective range [1e+00, 5e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+04]
+Presolve removed 525 rows and 333 columns
+Presolve time: 0.01s
+Presolved: 818 rows, 432 columns, 2296 nonzeros
+Variable types: 0 continuous, 432 integer (215 binary)
+
+Root relaxation: objective 6.072348e+05, 402 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 607234.750    0   95          - 607234.750      -     -    0s
+H    0     0                    611424.00000 607234.750  0.69%     -    0s
+H    0     0                    609438.00000 607234.750  0.36%     -    0s
+     0     0 607299.774    0  211 609438.000 607299.774  0.35%     -    0s
+H    0     0                    608894.00000 607299.774  0.26%     -    0s
+     0     0 607455.428    0  182 608894.000 607455.428  0.24%     -    0s
+H    0     0                    608756.00000 607455.428  0.21%     -    0s
+     0     0 607496.883    0  151 608756.000 607496.883  0.21%     -    0s
+     0     0 607497.202    0  155 608756.000 607497.202  0.21%     -    0s
+     0     0 607497.252    0  115 608756.000 607497.252  0.21%     -    0s
+H    0     0                    608753.00000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+     0     0 607497.252    0  130 608753.000 607497.252  0.21%     -    0s
+H    0     0                    608738.00000 607497.252  0.20%     -    0s
+     0     0 607497.252    0   96 608738.000 607497.252  0.20%     -    0s
+H    0     0                    608245.00000 607497.252  0.12%     -    0s
+     0     0 607506.875    0  146 608245.000 607506.875  0.12%     -    0s
+H    0     0                    607968.00000 607506.875  0.08%     -    0s
+H    0     0                    607877.00000 607506.875  0.06%     -    0s
+     0     0 607529.035    0  167 607877.000 607529.035  0.06%     -    0s
+     0     0 607531.259    0  149 607877.000 607531.259  0.06%     -    0s
+     0     0 607532.878    0  150 607877.000 607532.878  0.06%     -    0s
+     0     0 607534.285    0  113 607877.000 607534.285  0.06%     -    0s
+     0     0 607534.285    0  114 607877.000 607534.285  0.06%     -    0s
+     0     0 607534.285    0  114 607877.000 607534.285  0.06%     -    0s
+H    0     0                    607852.00000 607534.285  0.05%     -    0s
+     0     2 607534.285    0  114 607852.000 607534.285  0.05%     -    0s
+H   58     6                    607789.00000 607673.423  0.02%   8.0    0s
+*   58     6              37    607789.00000 607673.423  0.02%   8.0    0s
+*  271    48              34    607786.00000 607673.423  0.02%   5.6    0s
+*  299    47              33    607785.00000 607673.423  0.02%   5.5    0s
+*  340    33              36    607766.00000 607673.423  0.02%   5.3    0s
+*  365    31              35    607762.00000 607673.423  0.01%   5.1    0s
+*  681    68              35    607761.00000 607676.491  0.01%   5.1    0s
+*  800   115              31    607759.00000 607676.833  0.01%   5.1    0s
+*  963    81              31    607753.00000 607677.042  0.01%   5.1    0s
+
+Cutting planes:
+  Gomory: 23
+  Cover: 2
+  Implied bound: 6
+  MIR: 31
+  Zero half: 1
+  Mod-K: 1
+
+Explored 1345 nodes (9698 simplex iterations) in 0.49 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.077530000000e+05, best bound 6.077370000000e+05, gap 0.0026%
+
+Wrote result file 'ILPmodel.sol'
+
+
+Gurobi 6.0.5 (linux64) logging started Wed Apr 13 06:50:27 2016
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.0.5 build v6.0.5rc1 (linux64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Warning: unknown variable '+' in integer section
+Warning: unknown variable '-' in integer section
+Warning: unknown variable '0.500000' in integer section
+Warning: unknown variable '2.000000' in integer section
+Warning: unknown variable '12' in integer section
+Warning: unknown variable '20' in integer section
+WARNING: Numeric variable name in LP file ('0.500000') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file ILPmodel.lp
+Reading time = 0.01 seconds
+(null): 1013 rows, 621 columns, 3016 nonzeros
+Optimize a model with 1013 rows, 621 columns and 3016 nonzeros
+Coefficient statistics:
+  Matrix range    [5e-01, 1e+05]
+  Objective range [1e+00, 5e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+04]
+Presolve removed 459 rows and 291 columns
+Presolve time: 0.02s
+Presolved: 554 rows, 330 columns, 1552 nonzeros
+Variable types: 0 continuous, 330 integer (167 binary)
+
+Root relaxation: objective 6.073589e+05, 305 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 607358.916    0   59          - 607358.916      -     -    0s
+H    0     0                    609840.00000 607358.916  0.41%     -    0s
+H    0     0                    609127.00000 607358.916  0.29%     -    0s
+     0     0 607388.509    0   38 609127.000 607388.509  0.29%     -    0s
+H    0     0                    607846.00000 607388.509  0.08%     -    0s
+     0     0 607392.918    0   46 607846.000 607392.918  0.07%     -    0s
+H    0     0                    607684.00000 607392.918  0.05%     -    0s
+     0     0 607393.183    0   36 607684.000 607393.183  0.05%     -    0s
+     0     0 607393.183    0   36 607684.000 607393.183  0.05%     -    0s
+     0     0 607393.183    0   15 607684.000 607393.183  0.05%     -    0s
+H    0     0                    607678.00000 607393.183  0.05%     -    0s
+     0     0 607393.183    0   36 607678.000 607393.183  0.05%     -    0s
+H    0     0                    607675.00000 607393.183  0.05%     -    0s
+     0     0 607393.427    0   43 607675.000 607393.427  0.05%     -    0s
+H    0     0                    607654.00000 607393.427  0.04%     -    0s
+     0     0 607396.428    0   60 607654.000 607396.428  0.04%     -    0s
+     0     0 607398.415    0  102 607654.000 607398.415  0.04%     -    0s
+     0     0 607400.063    0  103 607654.000 607400.063  0.04%     -    0s
+     0     0 607400.063    0  103 607654.000 607400.063  0.04%     -    0s
+H    0     0                    607548.00000 607400.063  0.02%     -    0s
+     0     2 607400.088    0   98 607548.000 607400.088  0.02%     -    0s
+*   26     0              15    607446.00000 607418.690  0.00%   5.7    0s
+*   29     0              14    607434.00000 607418.690  0.00%   5.4    0s
+
+Cutting planes:
+  Gomory: 12
+  Implied bound: 1
+  MIR: 7
+  Zero half: 1
+
+Explored 95 nodes (1389 simplex iterations) in 0.24 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.074340000000e+05, best bound 6.074190000000e+05, gap 0.0025%
+
+Wrote result file 'ILPmodel.sol'
+
+
+Gurobi 6.0.5 (linux64) logging started Wed Apr 13 07:02:40 2016
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.0.5 build v6.0.5rc1 (linux64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Warning: unknown variable '+' in integer section
+Warning: unknown variable '-' in integer section
+Warning: unknown variable '20' in integer section
+Warning: unknown variable '12' in integer section
+Warning: unknown variable '0.500000' in integer section
+Warning: unknown variable '2.000000' in integer section
+WARNING: Numeric variable name in LP file ('20') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file ILPmodel.lp
+Reading time = 0.01 seconds
+(null): 2118 rows, 1176 columns, 6868 nonzeros
+Optimize a model with 2118 rows, 1176 columns and 6868 nonzeros
+Coefficient statistics:
+  Matrix range    [5e-01, 1e+05]
+  Objective range [1e+00, 5e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+04]
+Presolve removed 776 rows and 416 columns
+Presolve time: 0.02s
+Presolved: 1342 rows, 760 columns, 3878 nonzeros
+Variable types: 0 continuous, 760 integer (442 binary)
+
+Root relaxation: objective 8.128576e+05, 715 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 812857.610    0   90          - 812857.610      -     -    0s
+H    0     0                    814258.00000 812857.610  0.17%     -    0s
+     0     0 812985.593    0  174 814258.000 812985.593  0.16%     -    0s
+     0     0 813104.204    0  172 814258.000 813104.204  0.14%     -    0s
+     0     0 813125.739    0  158 814258.000 813125.739  0.14%     -    0s
+     0     0 813126.250    0  158 814258.000 813126.250  0.14%     -    0s
+     0     0 813126.329    0  151 814258.000 813126.329  0.14%     -    0s
+     0     0 813126.329    0  146 814258.000 813126.329  0.14%     -    0s
+     0     0 813126.329    0  153 814258.000 813126.329  0.14%     -    0s
+H    0     0                    813810.00000 813126.329  0.08%     -    0s
+     0     0 813126.990    0  146 813810.000 813126.990  0.08%     -    0s
+     0     0 813126.990    0  154 813810.000 813126.990  0.08%     -    0s
+     0     0 813126.990    0  152 813810.000 813126.990  0.08%     -    0s
+     0     0 813126.990    0  101 813810.000 813126.990  0.08%     -    0s
+     0     0 813181.238    0   64 813810.000 813181.238  0.08%     -    0s
+     0     0 813213.908    0  199 813810.000 813213.908  0.07%     -    0s
+     0     0 813214.579    0  188 813810.000 813214.579  0.07%     -    0s
+     0     0 813214.666    0  195 813810.000 813214.666  0.07%     -    0s
+     0     0 813214.668    0  181 813810.000 813214.668  0.07%     -    0s
+     0     0 813214.668    0  184 813810.000 813214.668  0.07%     -    0s
+     0     0 813214.668    0  178 813810.000 813214.668  0.07%     -    0s
+H    0     2                    813571.00000 813214.668  0.04%     -    0s
+     0     2 813214.668    0  153 813571.000 813214.668  0.04%     -    0s
+H   48     0                    813324.00000 813232.903  0.01%   7.0    0s
+*   48     0              28    813324.00000 813232.903  0.01%   7.0    0s
+
+Cutting planes:
+  Gomory: 23
+  Implied bound: 4
+  MIR: 15
+  Zero half: 4
+
+Explored 179 nodes (3779 simplex iterations) in 0.57 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.133240000000e+05, best bound 8.132430000000e+05, gap 0.0100%
+
+Wrote result file 'ILPmodel.sol'
+
+
+Gurobi 6.0.5 (linux64) logging started Wed Apr 13 07:15:41 2016
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.0.5 build v6.0.5rc1 (linux64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Warning: unknown variable '+' in integer section
+Warning: unknown variable '-' in integer section
+Warning: unknown variable '12' in integer section
+Warning: unknown variable '0.500000' in integer section
+Warning: unknown variable '2.000000' in integer section
+Warning: unknown variable '20' in integer section
+WARNING: Numeric variable name in LP file ('12') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file ILPmodel.lp
+Reading time = 0.01 seconds
+(null): 1213 rows, 711 columns, 3674 nonzeros
+Optimize a model with 1213 rows, 711 columns and 3674 nonzeros
+Coefficient statistics:
+  Matrix range    [5e-01, 1e+05]
+  Objective range [1e+00, 5e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+04]
+Presolve removed 498 rows and 315 columns
+Presolve time: 0.02s
+Presolved: 715 rows, 396 columns, 2012 nonzeros
+Variable types: 0 continuous, 396 integer (200 binary)
+
+Root relaxation: objective 6.071518e+05, 354 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 607151.842    0   92          - 607151.842      -     -    0s
+H    0     0                    610704.00000 607151.842  0.58%     -    0s
+H    0     0                    609473.00000 607151.842  0.38%     -    0s
+     0     0 607211.357    0  150 609473.000 607211.357  0.37%     -    0s
+H    0     0                    609169.00000 607211.357  0.32%     -    0s
+     0     0 607327.378    0  134 609169.000 607327.378  0.30%     -    0s
+H    0     0                    608626.00000 607327.378  0.21%     -    0s
+     0     0 607332.847    0   84 608626.000 607332.847  0.21%     -    0s
+H    0     0                    608496.00000 607332.847  0.19%     -    0s
+     0     0 607358.454    0   60 608496.000 607358.454  0.19%     -    0s
+     0     0 607364.468    0  139 608496.000 607364.468  0.19%     -    0s
+     0     0 607371.589    0  153 608496.000 607371.589  0.18%     -    0s
+     0     0 607371.637    0   98 608496.000 607371.637  0.18%     -    0s
+     0     0 607373.829    0  143 608496.000 607373.829  0.18%     -    0s
+     0     0 607373.829    0  123 608496.000 607373.829  0.18%     -    0s
+H    0     0                    608464.00000 607373.829  0.18%     -    0s
+H    0     0                    608458.00000 607373.829  0.18%     -    0s
+     0     0 607373.829    0   77 608458.000 607373.829  0.18%     -    0s
+     0     0 607373.829    0   78 608458.000 607373.829  0.18%     -    0s
+H    0     0                    607808.00000 607373.829  0.07%     -    0s
+H    0     0                    607741.00000 607373.829  0.06%     -    0s
+H    0     0                    607731.00000 607373.829  0.06%     -    0s
+     0     0 607401.323    0  135 607731.000 607401.323  0.05%     -    0s
+     0     0 607403.812    0  136 607731.000 607403.812  0.05%     -    0s
+     0     0 607405.358    0  119 607731.000 607405.358  0.05%     -    0s
+     0     0 607407.601    0  119 607731.000 607407.601  0.05%     -    0s
+     0     0 607407.601    0  108 607731.000 607407.601  0.05%     -    0s
+H    0     2                    607654.00000 607407.601  0.04%     -    0s
+     0     2 607407.601    0  108 607654.000 607407.601  0.04%     -    0s
+H   27     0                    607521.00000 607443.852  0.01%   8.9    0s
+H  179    42                    607493.00000 607445.932  0.01%   5.9    0s
+
+Cutting planes:
+  Gomory: 16
+  Implied bound: 3
+  MIR: 15
+  Zero half: 2
+  Mod-K: 2
+
+Explored 245 nodes (2985 simplex iterations) in 0.36 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.074930000000e+05, best bound 6.074460000000e+05, gap 0.0077%
+
+Wrote result file 'ILPmodel.sol'
+

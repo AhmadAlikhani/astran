@@ -361,7 +361,7 @@ void Router::compactLayout(string lpSolverFile){
 		}
 	}
 	
-	cpt.solve(lpSolverFile, 3600 , "cplex");
+	cpt.solve(lpSolverFile, 3600 , "gurobi");
 	
 	for (unsigned int i =0; i < geometries.size(); i++ ) {		
 		int xa = cpt.getVariableVal( "x" + to_string( i ) + "a" );
